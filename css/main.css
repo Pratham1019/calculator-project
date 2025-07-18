@@ -1,0 +1,120 @@
+:root {
+    --color-bg: #f4f4f9;
+    --color-display: #e0e0e0;
+    --color-button-base: #ffffff;
+    --color-number-button: #d1d5db;
+    --color-operator-button: #60a5fa;
+    --color-equals-button: #10b981;
+    --color-text: #111827;
+    --color-border: #cbd5e1;
+    --color-hover: #cbd5e1;
+    --color-operator-hover: #3b82f6;
+    --color-equals-hover: #059669;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: var(--color-bg);
+}
+
+.main-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc-container {
+    width: 550px;
+    height: 750px;
+    background-color: var(--color-button-base);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    transform: scale(0.8);
+    transform-origin: center center;
+}
+
+.display {
+    height: 200px;
+    padding: 50px;
+    background-color: var(--color-display);
+    border-radius: 10px 10px 0 0;
+    font-size: 64px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--color-text);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.row {
+    display: flex;
+    gap: 2px;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 36px;
+    width: 136px;
+    height: 108.4px;
+    background-color: var(--color-number-button);
+    color: var(--color-text);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Functional buttons */
+.clear,
+.zero {
+    width: 274px;
+}
+
+.zero {
+    border-radius: 0 0 0 10px;
+}
+
+.op {
+    background-color: var(--color-operator-button);
+}
+
+.equals {
+    background-color: var(--color-equals-button);
+    border-radius: 0 0 10px 0;
+}
+
+/* Hover states */
+.num:hover,
+.clear:hover,
+.zero:hover {
+    background-color: var(--color-hover);
+}
+
+.op:hover {
+    background-color: var(--color-operator-hover);
+}
+
+.equals:hover {
+    background-color: var(--color-equals-hover);
+}
+
+/* Smaller backspace icon */
+.backspace {
+    font-size: 24px;
+}
