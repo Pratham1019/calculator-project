@@ -54,6 +54,10 @@ body {
     justify-content: flex-end;
     align-items: center;
     color: var(--color-text);
+
+    overflow: hidden;
+    overflow: clip;
+    overflow-clip-margin: content-box;
 }
 
 .buttons {
@@ -102,7 +106,8 @@ body {
 /* Hover states */
 .num:hover,
 .clear:hover,
-.zero:hover {
+.zero:hover,
+.backspace:hover {
     background-color: var(--color-hover);
 }
 

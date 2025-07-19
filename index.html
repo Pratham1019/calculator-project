@@ -16,36 +16,38 @@
 
 <body>
     <main class="main-container">
-        <section class="calc-container" role="region" aria-label="Calculator">
-            <div class="display" id="display">0</div>
+        <section class="calc-container">
+            <div class="display">
+                0
+            </div>
 
             <div class="buttons">
                 <div class="row">
                     <button class="btn clear">CE</button>
-                    <button class="btn backspace num" aria-label="Backspace">⌫</button>
+                    <button class="btn backspace" aria-label="Backspace">⌫</button>
                     <button class="btn op">÷</button>
                 </div>
                 <div class="row">
-                    <button class="btn num">7</button>
-                    <button class="btn num">8</button>
-                    <button class="btn num">9</button>
+                    <button class="btn num" data-val="7">7</button>
+                    <button class="btn num" data-val="8">8</button>
+                    <button class="btn num" data-val="9">9</button>
                     <button class="btn op">×</button>
                 </div>
                 <div class="row">
-                    <button class="btn num">4</button>
-                    <button class="btn num">5</button>
-                    <button class="btn num">6</button>
+                    <button class="btn num" data-val="4">4</button>
+                    <button class="btn num" data-val="5">5</button>
+                    <button class="btn num" data-val="6">6</button>
                     <button class="btn op">−</button>
                 </div>
                 <div class="row">
-                    <button class="btn num">1</button>
-                    <button class="btn num">2</button>
-                    <button class="btn num">3</button>
+                    <button class="btn num" data-val="1">1</button>
+                    <button class="btn num" data-val="2">2</button>
+                    <button class="btn num" data-val="3">3</button>
                     <button class="btn op">+</button>
                 </div>
                 <div class="row">
-                    <button class="btn zero num">0</button>
-                    <button class="btn num">.</button>
+                    <button class="btn zero num" data-val="0">0</button>
+                    <button class="btn num" data-val=".">.</button>
                     <button class="btn equals">=</button>
                 </div>
             </div>
